@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+    /* max-width: 700px; */
+    /* margin: 0 auto; */
+}
+.container-1{
+    display: flex;
+    flex-direction: column;
+}
+#Bill{
+    border: none;
+    width: 90%;
+    color: #9c60ff
+}
+.Bill-input{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 10px;;
+}
+#Bill:focus{
+    border: none;
+    outline: none;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 5px;
+}
+.button{
+    padding: 5px;
+    background-color: #9c60ff;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+.buttons.disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.buttons.disabled .button{
+    cursor: not-allowed;
+}
+.button.selected{
+    outline:4px solid rgba(255, 162, 0, .888);
+}
+.container-1{
+    color: #9c60ff;
+}
+.people{
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    margin: 10px 0px;
+    font-size: 16px;
+}
+.bill-button{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: #9c60ff;
+    color: aliceblue;
+    padding: 7px;
+    cursor: pointer;
+}
+.bill-button:disabled{
+    opacity: 0.6;
+    cursor:not-allowed
+}
+.custom-Tip{
+padding: 5px 10px;
+background-color: rgb(216, 214, 214);
+border: none;
+color: #9c60ff;
+}
+.custom-Tip:disabled{
+    cursor: not-allowed;
+}
+.custom-Tip:focus{
+    color: #9c60ff;
+    outline: none;
+}
+#people-no{
+padding: 5px 10px;
+background-color: rgb(216, 214, 214);
+border: none;
+color: #9c60ff;
+}
+#people-no:focus{
+    color: #9c60ff;
+    outline: none;
+}
+#people-no:disabled{
+    cursor: not-allowed;
+}
+.container-2{
+    display: flex;
+    flex-direction: column;
+ background-color: #34568b;
+ color: white;
+ gap: 30px;
+
+}
+
+.outer-container2{
+    background-color: #34568b;
+    padding: 30px;
+    border-radius: 10px; 
+ box-shadow: #3f66a7 0px 0px 10px;
+ /* max-width: 350px;
+ width: 100%; */
+}
+.amount-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:80px
+}
+.amount-detail span{
+    color: #9c60ff;
+    font-weight: bold;
+    font-size: 25px;
+}
+.reset-button{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+@media(max-width:590px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+}

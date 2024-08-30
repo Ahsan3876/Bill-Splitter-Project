@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill splitter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container-1">
+        <label for="Bill"><h3>Bill</h3></label>
+        <div class="Bill-input">
+          <span class="rupee">₹</span>
+          <input type="number" id="Bill" />
+        </div>
+        <h3>Select Tip</h3>
+        <div class="buttons disabled">
+          <button class="button">5%</button>
+          <button class="button">15%</button>
+          <button class="button">10%</button>
+          <button class="button">25%</button>
+          <button class="button">55%</button>
+          <button class="button">75%</button>
+        </div>
+        <input
+          type="text"
+          class="custom-Tip"
+          disabled
+          placeholder="Custom Tip"
+        />
+        <div class="people">
+          <label for="people-no"><h3>Number of people</h3></label>
+          <input
+            type="text"
+            id="people-no"
+            disabled
+            placeholder="Number of People"
+          />
+        </div>
+        <button class="bill-button" disabled>Generate Bill</button>
+      </div>
+      <div class="outer-container2">
+        <div class="container-2">
+          <div class="amount-detail">
+            <h3>Tip Amount</h3>
+            <span></span>
+          </div>
+          <div class="amount-detail">
+            <h3>Total</h3>
+            <span class="total-amount"> </span>
+          </div>
+          <div class="amount-detail">
+            <h3>Each Person Bill</h3>
+
+            <span class="person-bill"></span>
+          </div>
+          <button class="reset-button" disabled>Reset</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
